@@ -1,3 +1,4 @@
+/* Contenedor principal del layout */
 .pagina {
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -9,6 +10,7 @@
     min-height: 100vh;
 }
 
+/* Menú */
 header { 
     grid-area: header; 
     background-color: #1E293B; 
@@ -17,6 +19,7 @@ header {
     border-radius: 6px;
 }
 
+/* Barra lateral */
 nav { 
     grid-area: nav;
     background-color: #F5F1E8;
@@ -24,19 +27,21 @@ nav {
     border-right: 1px solid #d1d3d6;
 }
 
+/* Espacio principal dónde irá el contenido */
 main { 
     grid-area: main;
     padding:20px; 
     background-color: #F5F1E8;
 }
 
+/* Barra inferior */
 footer { 
     grid-area: footer;
     background-color: #1E293B;
     color:white;
     padding:15px;
     text-align:center; 
-    position: fixed;
+    position: fixed;  /* esto es para que el contenido no arrastre la barra hacia abajo */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -44,6 +49,7 @@ footer {
     justify-content: space-between;
 }
 
+/* Clase que almacena el menú del header */
 .contenedor {
     display: flex;
     justify-content:space-around;
@@ -52,20 +58,19 @@ footer {
 
 }
 
+/* Estilo para los links */
 .item a {
     text-decoration: none; 
     color: inherit;
 }
 
-.item a:hover {
-    color: #1F2937;
-}
-
+/* Imagen dentro del contenedor foto */
 .foto img {
     width: 100%;
     height: auto;
 }
 
+/* Grid que almacena las tarjetas con su información */
 .tarjetas {
     display: grid;
     grid-template-columns: 50% 50%; 
@@ -75,33 +80,39 @@ footer {
     margin-top: 15px;
 }
 
+/* Estilos de las etiquetas */
 .resumen {
-    background-color: #D97706;
+    background-color: #D97706; 
     color: white;
     border-radius: 6px;
     text-align: center;
     padding-top: 5%;
 }
 
+/* Enlaces dentro de resumen sin estilo */
 .resumen a {
     text-decoration: none; 
     color: inherit;
 }
 
+/* Título centrados */
 .titulo {
     text-align: center;
 }
 
+/* Estilo de otro título */
 .titulo2 {
     margin-top: 45px;
     text-align: center;
 }
 
+/* Estilo de otro título */
 .titulo3 {
     margin-top: 45px;
     text-align: center;
 }
 
+/* Grid que almacena las tarjetas con su información */
 .tarjetas2 {
     display: grid;
     grid-template-columns: 50% 50%; 
@@ -111,10 +122,12 @@ footer {
     margin-top: 40px;
 }
 
+/* Hace que el texto de una tarjeta no llegue al límite */
 .texto {
     padding: 10px;
 }
 
+/* Grid que almacena las tarjetas con su información */
 .tarjetas3 {
     display: grid;
     grid-template-columns: 50% 50%; 
@@ -123,6 +136,7 @@ footer {
     padding: 10px;
 }
 
+/* Estilos de las etiquetas de competencias */
 .competencias {
     background-color:#D97706;
     color: white;
@@ -130,12 +144,14 @@ footer {
     text-align: center;
 }
 
+/* Contenedor principal del footer */
 .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Contenedor de enlaces/iconos */
 .links {
     display: flex;
     gap: 15px;
@@ -143,11 +159,13 @@ footer {
     align-items: center;
 }
 
+/* Tamaño de iconos */
 .links img {
     width: 50px;
     height: 50px;
 }
 
+/* Estilos del h1 */
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
