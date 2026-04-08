@@ -1,0 +1,102 @@
+.pagina {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    min-height: 100vh;
+}
+
+header { 
+    grid-area: header; 
+    background: #0984e3; 
+    color:white;
+    padding:20px; 
+}
+
+nav { 
+    grid-area: nav;
+    background: #dfe6e9;
+    padding:20px;
+}
+
+main { 
+    grid-area: main;
+    padding:20px; 
+}
+
+footer { 
+    grid-area: footer;
+    background: #2d3436;
+    color:white;
+    padding:30px;
+    text-align:center; 
+}
+
+.contenedor {
+    display: flex;
+    justify-content:space-around;
+    font-size:150%;
+    align-items: center;
+
+}
+
+.item a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 75% 75%;
+    gap: 30px;
+    padding: 10px;
+}
+
+.resumen {
+    background: #7b4397;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.resumen a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo2 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.tarjetas2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 5%;
+}
+
+.tarjetas3 {
+    display: flex;
+    justify-content: center;  
+    margin-top: 30px;
+}
+
+.tarjetas3 .resumen {
+    width: 50%;
+    max-width: 50%;
+}
