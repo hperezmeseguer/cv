@@ -11,25 +11,28 @@
 
 header { 
     grid-area: header; 
-    background: #0984e3; 
+    background-color: #1E293B; 
     color:white;
     padding:20px; 
+    border-radius: 6px;
 }
 
 nav { 
     grid-area: nav;
-    background: #dfe6e9;
-    padding:20px;
+    background-color: #F5F1E8;
+    padding: 20px;
+    border-right: 1px solid #d1d3d6;
 }
 
 main { 
     grid-area: main;
     padding:20px; 
+    background-color: #F5F1E8;
 }
 
 footer { 
     grid-area: footer;
-    background: #2d3436;
+    background-color: #1E293B;
     color:white;
     padding:15px;
     text-align:center; 
@@ -54,6 +57,10 @@ footer {
     color: inherit;
 }
 
+.item a:hover {
+    color: #1F2937;
+}
+
 .foto img {
     width: 100%;
     height: auto;
@@ -69,9 +76,9 @@ footer {
 }
 
 .resumen {
-    background-color: #7b4397;
+    background-color: #D97706;
     color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     text-align: center;
     padding-top: 5%;
 }
@@ -117,16 +124,10 @@ footer {
 }
 
 .competencias {
-    background-color: #7b4397;
+    background-color:#D97706;
     color: white;
     border-radius: 4px;
     text-align: center;
-    margin-top: 20px
-}
-
-.links {
-    text-align: right;
-    align-items: center;
 }
 
 .info {
@@ -138,9 +139,19 @@ footer {
 .links {
     display: flex;
     gap: 15px;
+    text-align: right;
+    align-items: center;
 }
 
 .links img {
     width: 50px;
     height: 50px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #1E293B;
+    letter-spacing: 1px;
 }
